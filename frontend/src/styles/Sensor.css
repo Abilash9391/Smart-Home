@@ -1,0 +1,16 @@
+.sensor{
+    padding: 0.2em;
+    margin: 0.3em;
+    border-radius: 10px;
+
+}
+.Value{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.roomName{
+    margin-bottom: 1em;
+}
+p{
+    font-weight: 600;
+}

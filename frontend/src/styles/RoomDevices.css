@@ -1,0 +1,105 @@
+.room-devices {
+    overflow:hidden;
+    padding: 10px;
+    margin: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.room-devices .devices::-webkit-scrollbar {
+    display: none;
+}
+
+.room-devices .devices {
+    flex-direction: row;
+    overflow-x: hidden;
+    padding: 10px; 
+}
+
+.room-devices .devices > * {
+    flex: 0 0 31%; 
+    margin: 10px; 
+}
+
+.arrows {
+    width: max-content;
+}
+
+.arrows > i :hover{
+    box-shadow: 0 2px 12px 0 rgb(79, 104, 45);
+    transform: scale(1.1);
+   /* filter: drop-shadow(0 2px 12px 0 rgb(79, 104, 45)); */
+}
+.arrows > i {
+    margin-left: 0.5em;
+    color: black;
+    font-size: 2em;
+    cursor: pointer;
+}
+.devices {
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+    width: 100%;
+  }
+
+.room-devices{
+    min-height: 13em;
+}
+
+@media (min-width:481px) and (max-width: 768px) {
+    .arrows{
+        font-size: medium;
+    }
+    .room-devices .devices > * {
+        flex: 1 0 48%;
+        margin: 10px;
+    }
+    .room-devices {
+      width: 100%;
+      padding: 15px;
+      margin: 15px auto;
+    }
+  }
+  @media(min-width: 992px){
+    .room-devices {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .arrows{
+        margin-right: 0;
+    }
+    
+  }
+  @media (max-width: 480px) {
+    .devices {
+        all: unset;
+      }
+    .devices {
+      flex-direction: row;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+    .room-devices .devices > * {
+      flex: 0 0 100%;
+      margin: 10px;
+    }
+    
+  }
+.add {
+  text-align: center;
+  background-image: linear-gradient(to right, #9796f0, #e1a9b7);
+  color: black;
+  font-weight: bold;
+  /* padding: 0.5rem 1rem; */
+  border-radius: 20px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  transition: all 300ms ease;
+  cursor: pointer;
+    &:hover{
+      transform: scale(1.05);
+    }
+}
+

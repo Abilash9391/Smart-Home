@@ -1,0 +1,58 @@
+.sensors{
+    margin-top: 0.8em !important;
+    flex-direction: column;
+    /* left: auto;
+    position: absolute; */
+    flex-wrap: wrap;
+}
+.item > p{
+    font-size: 2em;
+}
+
+.item{
+    margin-left: -20%;
+}
+.sensordata{
+    justify-content: space-around;
+}
+
+.roomName{
+     font-size: 5rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+@media (max-width: 468px){
+    /* .roomName{
+        font-size: 2.5rem;
+    } */
+    .sensors{
+        flex-direction: row;
+    }
+    .sensordata{
+        display: block !important;
+        margin: 10px !important;
+        color: black;
+    }
+    .item{
+        margin: 10px;
+    }
+    .item >p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px){
+    .roomName{
+        font-size: 2.5em;
+    }
+    .item >p{
+        font-size: 1em;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+    .roomName{
+        font-size: 3.5em;
+    }
+    .item> p{
+        font-size: 1.5em;
+    }
+}

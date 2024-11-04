@@ -1,0 +1,50 @@
+.react-calendar{
+    background: rgb(215, 224, 232,-0.2) ;
+    
+    width: 200px;
+    height: 200px;
+}
+/* Example of extending the calendar styles */
+
+/* Change the background color of the calendar */
+.react-calendar {
+    /* background: rgb(215, 224, 232,0.4) ; */
+    
+    border-radius: 10px;
+    padding: 2px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Customize navigation buttons */
+  .react-calendar__navigation button {
+    /* background-color: #007bff; */
+    color: rgb(0, 0, 0);
+    border: none;
+    /* padding: 1px; */
+    margin-bottom: 0%;
+    border-radius: 4px;
+  }
+  
+  .react-calendar__navigation button:enabled:hover {
+    /* background-color: #0056b3; */
+    cursor: pointer;
+  }
+  
+  /* Style individual day tiles */
+  .react-calendar__tile {
+    border-radius: 8px;
+    padding: 1px;
+    font-size: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Highlight the active tile */
+  .react-calendar__tile--active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .react-calendar__tile:enabled:hover {
+    background-color: #e9ecef;
+  }
+  

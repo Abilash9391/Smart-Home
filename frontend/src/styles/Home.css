@@ -1,0 +1,73 @@
+/* Home.css */
+
+.containerg {
+  max-width: 1200px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 16px; /* Add padding */
+}
+
+.data {
+  margin-bottom: 24px; /* Space below the SensorData component */
+}
+
+.grid {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(1, 1fr); /* One column by default */
+  gap: 24px; /* Space between grid items */
+}
+
+@media (min-width: 768px) {
+  .grid {
+      grid-template-columns: repeat(2, 1fr); /* Three columns on medium screens and up */
+  }
+}
+
+.card {
+  background-color: none; /* Dark gray background */
+  padding: 16px; /* Inner padding */
+  border: 2px solid black; /* Green border */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.card h4 {
+  font-size: 1.125rem; /* Font size for the heading */
+  font-weight: 500; /* Medium font weight */
+  color: black; /* Light gray text color */
+  margin-bottom: 16px; /* Space below the heading */
+}
+
+.card p {
+  color: black; /* Light gray text color */
+}
+
+.home >.data >.sensordata >.sensors {
+  flex-direction: row !important;
+  font-size: 1.5em;
+  justify-content: space-around;
+  width: 60%;
+  }
+  
+  .home >.data >.sensordata {
+    width: 100% !important;
+    font-size:0.7em !important;
+    flex-direction: column !important;
+  }
+
+  .home > .data >.sensordata >.item{
+    font-size: 2em !important;
+    margin-left: 1em;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  @media (max-width: 468px) {
+    .home > .data >.sensordata >.item{
+      /* font-size: 1.5em !important; */
+      margin-left: 10px;
+    }
+
+    .home >.data >.sensordata >.sensors {
+      /* font-size: 1em; */
+      width: 100%;
+      flex-direction: column !important;
+      align-content: space-between;
+      }
+  }
